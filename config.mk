@@ -8,7 +8,7 @@ PRODUCT_BOOT_JARS += \
 
 DEVICE_PACKAGE_OVERLAYS += vendor/uos/overlay/common
 
-# crDroid Maintainers list
+# UOS Maintainers list
 PRODUCT_COPY_FILES += \
     vendor/uos/Maintainers.txt:system/etc/Maintainers.txt
 
