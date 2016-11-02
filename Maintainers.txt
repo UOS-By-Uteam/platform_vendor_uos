@@ -1,0 +1,44 @@
+===============
+UOS Maintainers
+===============
+
+===============================================
+This is UOS maintainers list .... roms provided
+by other people are not considered as official.
+===============================================
+
+===
+HTC
+===
+
+
+==
+LG
+==
+
+
+========
+MOTOROLA
+========
+
+=====
+NEXUS
+=====
+
+* Nexus 6 (shamu) ==> UTeam
+
+=======
+SAMSUNG
+=======
+
+
+====
+SONY
+====
+
+
+=======
+PANTECH
+=======
+
+* Sky VEGA IRON 2 (ef63s/l/k) ==> UTeam
