@@ -1,3 +1,4 @@
+PRODUCT_BOOTANIMATION := vendor/uos/prebuilt/bootanimation/bootanimation.zip
 
 #DU Utils Library
 PRODUCT_PACKAGES += \
