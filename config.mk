@@ -25,6 +25,7 @@ CM_DISPLAY_VERSION := UOS-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(sh
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.uos.version=$(CM_VERSION) \
+    ro.uos.displayversion=$(UOS_VERSION) \
     ro.modversion=$(CM_VERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \
