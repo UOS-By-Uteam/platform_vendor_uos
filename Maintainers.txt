@@ -42,3 +42,9 @@ PANTECH
 =======
 
 * Sky VEGA IRON 2 (ef63s/l/k) ==> UTeam
+
+======
+XIAOMI
+======
+
+* Xiaomi Mi 5/Pro (gemini) ===> UTeam
