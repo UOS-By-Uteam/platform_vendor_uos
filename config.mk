@@ -7,6 +7,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
 
+# UOS Unique packages
+PRODUCT_PACKAGES += \
+    UOSLauncher \
+    UCamera
+
 DEVICE_PACKAGE_OVERLAYS += vendor/uos/overlay/common
 
 # UOS Maintainers list
