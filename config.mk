@@ -10,6 +10,7 @@ PRODUCT_BOOT_JARS += \
 # UOS Unique packages
 PRODUCT_PACKAGES += \
     UOSLauncher \
+    UCalculator \
     UCamera
 
 DEVICE_PACKAGE_OVERLAYS += vendor/uos/overlay/common
