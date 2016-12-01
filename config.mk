@@ -10,6 +10,8 @@ PRODUCT_BOOT_JARS += \
 # UOS Unique packages
 PRODUCT_PACKAGES += \
     UOSLauncher \
+    UOSWallpapers \
+    UFileExplorer \
     UCalculator \
     UCamera
 
