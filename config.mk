@@ -13,7 +13,12 @@ PRODUCT_PACKAGES += \
     UOSWallpapers \
     UFileExplorer \
     UCalculator \
+    UCompass \
     UCamera
+
+ifeq ($(OFFICIAL_UOS),true)
+PRODUCT_PACKAGES += UOSUpdater
+endif
 
 DEVICE_PACKAGE_OVERLAYS += vendor/uos/overlay/common
 
@@ -26,7 +31,7 @@ PRODUCT_VERSION_MAJOR = 0
 PRODUCT_VERSION_MINOR = 1
 
 # Increase UOS Version with each major release.
-UOS_VERSION := 0.1
+UOS_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)
 
 CM_VERSION := UOS-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
 CM_DISPLAY_VERSION := UOS-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)
