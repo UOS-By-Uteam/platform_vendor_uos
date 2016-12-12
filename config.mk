@@ -14,11 +14,14 @@ PRODUCT_PACKAGES += \
     UFileExplorer \
     UCalculator \
     UCompass \
+    UOSUpdater \
     UCamera
 
-ifeq ($(OFFICIAL_UOS),true)
-PRODUCT_PACKAGES += UOSUpdater
-endif
+# UCamera libs
+PRODUCT_COPY_FILES += \
+    vendor/uos/prebuilt/libs/UCamera/libimageprocess_jni.so:system/lib/libimageprocess_jni.so \
+    vendor/uos/prebuilt/libs/UCamera/libmosaic_jni.so:system/lib/libmosaic_jni.so \
+    vendor/uos/prebuilt/libs/UCamera/libqrcode_jni.so:system/lib/libqrcode_jni.so
 
 DEVICE_PACKAGE_OVERLAYS += vendor/uos/overlay/common
 
@@ -29,12 +32,13 @@ PRODUCT_COPY_FILES += \
 # Product version should match Android version
 PRODUCT_VERSION_MAJOR = 0
 PRODUCT_VERSION_MINOR = 1
+PRODUCT_VERSION_OPTIONAL = 1
 
 # Increase UOS Version with each major release.
-UOS_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)
+UOS_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_OPTIONAL)
 
-CM_VERSION := UOS-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
-CM_DISPLAY_VERSION := UOS-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)
+CM_VERSION := UOS-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_OPTIONAL)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
+CM_DISPLAY_VERSION := UOS-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_OPTIONAL)-$(shell date -u +%Y%m%d)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.uos.version=$(CM_VERSION) \
